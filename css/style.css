@@ -69,9 +69,7 @@ address {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
 }
 header .contaner {
   display: flex;
@@ -143,15 +141,24 @@ header .contaner {
 }
 
 /**hero**/
+
 .overlay {
   max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  padding-top: 200px;
-  background-image: url(../images/hero.jpg);
+
+  margin: auto;
+
+  background-repeat: no-repeat;
   background-size: cover;
+}
+.hero .overlay {
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  padding-top: 200px;
   background-position: center;
 }
 .hero {
@@ -159,6 +166,10 @@ header .contaner {
   color: var(--secondary-accent-color);
   text-align: center;
   font-weight: 400;
+}
+.hero.section {
+  background-color: var(--dark-background-color);
+  padding: 0;
 }
 .hero .title-section {
   padding: 0;
@@ -229,6 +240,7 @@ header .contaner {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .activity-list {
@@ -320,6 +332,14 @@ header .contaner {
   display: block;
   justify-content: center;
   align-items: center;
+}
+/* klient */
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
 }
 /*footer*/
 .footer {

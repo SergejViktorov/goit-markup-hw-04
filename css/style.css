@@ -129,7 +129,7 @@ header .contaner {
 .contakt-link:focus {
   color: var(--accent-color);
 }
-.contakt-link .icon-mail {
+.icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -216,7 +216,6 @@ header .contaner {
   display: inline-block;
   outline: 1px solid tomato;
   background-color: var(--lite-background-color);
-  background-image: url();
 }
 /* activyty */
 .activity {

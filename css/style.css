@@ -54,7 +54,7 @@ address {
   color: var(--secondary-accent-color);
   line-height: 1.7;
   font-style: normal;
-
+  margin-right: 70px;
   width: 231px;
 }
 .visually-hidden {
@@ -122,16 +122,24 @@ header .contaner {
 }
 .contakt-link {
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
 }
 .contakt-link:hover,
 .contakt-link:focus {
   color: var(--accent-color);
 }
-.mail::before {
+.contakt-link .icon-mail {
   width: 16px;
   height: 12px;
-  content: ..;
-  background-image: url(../images/envelope(hover).svg);
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /**hero**/
@@ -186,7 +194,12 @@ header .contaner {
 .details {
   padding: 94px 0px;
 }
-
+.details-icon {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
 .list-details {
   display: flex;
 }
@@ -195,6 +208,15 @@ header .contaner {
 }
 .list-details .item:not(:last-child) {
   margin-right: 30px;
+}
+.list-details .item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  outline: 1px solid tomato;
+  background-color: var(--lite-background-color);
+  background-image: url();
 }
 /* activyty */
 .activity {
@@ -252,6 +274,7 @@ header .contaner {
   display: block;
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+
   background-color: var(--secondary-accent-color);
 }
 .comand-box {
@@ -269,12 +292,47 @@ header .contaner {
 .position {
   color: var(--secondary-text-color);
 }
+.master-social {
+  display: flex;
+  align-items: center;
+}
+.master-social .item-master {
+}
+.master-item {
+  width: 20px;
+  height: 20px;
+}
+.master-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.master-item .item {
+  fill: #fff;
+}
+.item-master {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
 /*footer*/
 .footer {
   display: block;
   background-color: var(--dark-background-color);
   text-decoration: none;
   padding: 60px 0px;
+}
+.footer .contaner {
+  display: flex;
+}
+.contaner .item {
 }
 .logo-footer {
   color: var(--secondary-accent-color);
@@ -286,6 +344,16 @@ header .contaner {
   display: block;
 }
 .footer-box {
+  margin-bottom: 20px;
+}
+.footer-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
   margin-bottom: 20px;
 }
 .address-link {

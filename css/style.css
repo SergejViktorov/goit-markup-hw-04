@@ -388,10 +388,8 @@ header .contaner {
 .footer .contaner {
   display: flex;
   outline: 1px solid tomato;
+  align-items: baseline;
 }
-.contaner .item {
-}
-
 .logo-footer {
   color: var(--secondary-accent-color);
   font-family: "Raleway", sans-serif;
@@ -406,12 +404,13 @@ header .contaner {
 }
 .address-list {
   display: inline-block;
-  margin-right: 70px;
 }
 .container-social {
   display: block;
   width: 206px;
   height: 80px;
+  align-items: baseline;
+  margin-left: 70px;
 }
 .footer-title {
   font-family: "Roboto";

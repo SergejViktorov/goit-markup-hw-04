@@ -426,6 +426,9 @@ header .contaner {
 .master-social .link:not(:last-child) {
   margin-right: 10px;
 }
+.social .master-item {
+  fill: #fff;
+}
 
 .address-link {
   color: var(--footer-contacts);

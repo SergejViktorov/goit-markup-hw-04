@@ -508,8 +508,6 @@ address .item:not(:last-child) {
   margin: 0;
 }
 
-
-}
 .title-box {
   display: block;
   padding: 20px 24px;

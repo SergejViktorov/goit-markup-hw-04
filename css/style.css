@@ -517,6 +517,7 @@ address .item:not(:last-child) {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primery-text-color);
 }
 .text-partfolio {
   color: var(--secondary-text-color);

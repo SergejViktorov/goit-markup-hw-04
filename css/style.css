@@ -19,8 +19,7 @@ h3 {
   margin-bottom: 0;
 }
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 ul {
   margin-top: 0;
@@ -55,7 +54,6 @@ address {
   color: var(--secondary-accent-color);
   line-height: 1.7;
   font-style: normal;
-  margin-right: 70px;
   width: 231px;
 }
 .visually-hidden {
@@ -221,13 +219,19 @@ header .contaner {
 .list-details .item:not(:last-child) {
   margin-right: 30px;
 }
-.list-details .item::before {
+.details-icon {
   content: "";
   width: 270px;
   height: 120px;
-  display: inline-block;
-  outline: 1px solid tomato;
+  display: flex;
+  border-radius: 4px;
   background-color: var(--lite-background-color);
+  margin-bottom: 30px;
+  background-image: url(../images/symbol-defs.svg#);
+}
+.details-icon .icon {
+  width: 70px;
+  height: 70px;
 }
 /* activyty */
 .activity {
@@ -368,9 +372,11 @@ header .contaner {
 }
 .footer .contaner {
   display: flex;
+  outline: 1px solid tomato;
 }
 .contaner .item {
 }
+
 .logo-footer {
   color: var(--secondary-accent-color);
   font-family: "Raleway", sans-serif;
@@ -383,16 +389,30 @@ header .contaner {
 .footer-box {
   margin-bottom: 20px;
 }
+.address-list {
+  display: inline-block;
+  margin-right: 70px;
+}
+.container-social {
+  display: block;
+  width: 206px;
+  height: 80px;
+}
 .footer-title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
+  margin-top: 0;
 }
+.master-social .link:not(:last-child) {
+  margin-right: 10px;
+}
+
 .address-link {
   color: var(--footer-contacts);
 }

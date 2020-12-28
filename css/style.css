@@ -107,6 +107,7 @@ header .contaner {
 .nav-link :hover,
 .nav-link :focus {
   color: var(--accent-color);
+  outline: none;
 }
 .contakt {
   display: flex;
@@ -125,6 +126,7 @@ header .contaner {
 .contakt-link:hover,
 .contakt-link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 .icon-mail {
   width: 16px;
@@ -336,6 +338,7 @@ header .contaner {
 .master-link:hover {
   background-color: var(--accent-color);
   fill: var(--secondary-accent-color);
+  outline: none;
 }
 .item-master {
   display: block;
@@ -374,6 +377,7 @@ header .contaner {
 .client-link:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 .client-icon {
   fill: currentColor;
@@ -436,6 +440,7 @@ header .contaner {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 address .item:not(:last-child) {
   margin-bottom: 9px;
@@ -476,6 +481,7 @@ address .item:not(:last-child) {
 .button:focus {
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
+  outline: none;
 }
 /* таблица картинок портфолио*/
 .flex-container {
